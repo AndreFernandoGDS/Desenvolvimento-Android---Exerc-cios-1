@@ -1,19 +1,16 @@
-/*1. Escreva uma função privada chamada helloWorld que não possui retorno algum e não
-recebe nenhum parâmetro.*/
+/*2. Modifique a função helloWorld para que receba uma String e retorne a quantidade de
+caracteres como um número inteiro.*/
 
 public class Exercicios1 {
-
-	private void helloWorld() {
-		
-		System.out.println("Hello World!");
-	}
+	
 	
 	public static void main(String[] args) {
 		
-		Exercicios1 exerc = new Exercicios1();
+		String tam = "Galo Metal!!";
 		
-		exerc.helloWorld();
+		//tam.length();
 		
+		System.out.println(tam.length());
 	}
 
 }
