@@ -1,16 +1,26 @@
-/*2. Modifique a função helloWorld para que receba uma String e retorne a quantidade de
-caracteres como um número inteiro.*/
+/*3. Modifique o retorno da função helloWorld para que retorne uma String com o seguinte
+formato:
+"A palavra possui X caracteres."
+X - Deve ser a quantidade de caracteres da palavra passada por parâmetro.
+*/
 
 public class Exercicios1 {
 	
 	
 	public static void main(String[] args) {
 		
-		String tam = "Galo Metal!!";
+		Exercicios1 print = new Exercicios1();
 		
-		//tam.length();
+		print.printFrase(10);
+	}
+	
+	
+	
+	private int printFrase(int x) {
 		
-		System.out.println(tam.length());
+		System.out.println("A palavra possui" + " " + x + " " + "caracteres.");
+		
+		return 0;
 	}
 
 }
