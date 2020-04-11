@@ -1,23 +1,30 @@
-/*4. Crie uma nova função capaz de receber dois números e retornar a soma dos mesmos*/
+/*5. Crie uma função que receba 3 números com casas decimais e execute o seguinte
+cálculo: ((x + y) * x) / z
+Faça o retorno com casas decimais*/
+
+import java.text.DecimalFormat;
 
 public class Exercicios1 {
 	
 	
 	public static void main(String[] args) {
 		
+		DecimalFormat forma = new DecimalFormat("##.##");
+		
 		Exercicios1 print = new Exercicios1();
-		int som;
+		double calc;
 		
-		som = print.soma(10, 5);
+		calc = print.Calculo(10.15, 5.16, 2.95);
 		
-		System.out.println("A soma entre os dois números é " + som);
+		System.out.println("A soma entre os dois números é " + forma.format(calc));
 	}
 	
 	
 	
-	private int soma(int x, int y) {
+	private double Calculo(double x, double y, double z) {
+		double result = (((x + y) * x) / z);
 		
-		return x + y;
+		return result;
 	}
 
 }
