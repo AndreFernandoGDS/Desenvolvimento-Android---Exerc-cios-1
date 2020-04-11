@@ -1,8 +1,4 @@
-/*3. Modifique o retorno da função helloWorld para que retorne uma String com o seguinte
-formato:
-"A palavra possui X caracteres."
-X - Deve ser a quantidade de caracteres da palavra passada por parâmetro.
-*/
+/*4. Crie uma nova função capaz de receber dois números e retornar a soma dos mesmos*/
 
 public class Exercicios1 {
 	
@@ -10,17 +6,18 @@ public class Exercicios1 {
 	public static void main(String[] args) {
 		
 		Exercicios1 print = new Exercicios1();
+		int som;
 		
-		print.printFrase(10);
+		som = print.soma(10, 5);
+		
+		System.out.println("A soma entre os dois números é " + som);
 	}
 	
 	
 	
-	private int printFrase(int x) {
+	private int soma(int x, int y) {
 		
-		System.out.println("A palavra possui" + " " + x + " " + "caracteres.");
-		
-		return 0;
+		return x + y;
 	}
 
 }
